@@ -9,6 +9,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using MoraviaTraning.Web.Models;
+using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace MoraviaTraning.Web.Controllers
 {
@@ -152,6 +153,10 @@ namespace MoraviaTraning.Web.Controllers
             if (ModelState.IsValid)
             {
                 var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+
+                user.Id = Guid.NewGuid().ToString();
+                user.Roles.Add(new IdentityUserRole { RoleId = ((int)RolesEnum.Client).ToString(), UserId = user.Id });
+
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
