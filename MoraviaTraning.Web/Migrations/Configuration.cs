@@ -1,6 +1,7 @@
 namespace MoraviaTraning.Web.Migrations
 {
     using Microsoft.AspNet.Identity.EntityFramework;
+    using Models;
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
@@ -34,6 +35,15 @@ namespace MoraviaTraning.Web.Migrations
               new IdentityRole { Id = "2", Name = "Admin" },
               new IdentityRole { Id = "3", Name = "WebAdmin" }
             );
+
+            context.Products.AddOrUpdate(p => p.Name,
+                new Product { Name = "Producto 1", Price = 25, Stock = 5 },
+                new Product { Name = "Producto 2", Price = 30, Stock = 5 },
+                new Product { Name = "Producto 3", Price = 98, Stock = 5 },
+                new Product { Name = "Producto 4", Price = 87, Stock = 5 });
+
+
+            context.SaveChanges();
 
 
         }

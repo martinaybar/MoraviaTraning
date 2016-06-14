@@ -11,7 +11,7 @@ using MoraviaTraning.Web.Models;
 
 namespace MoraviaTraning.Web.Controllers
 {
-    [Authorize(Roles ="Client")]
+    //[Authorize(Roles ="Client")]
     public class ProductsController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
@@ -122,12 +122,11 @@ namespace MoraviaTraning.Web.Controllers
 
 
 
-        public async Task<ActionResult> ProductsList()
+        public ActionResult ProductsList()
         {
            
             return View();
         }
-
 
 
 

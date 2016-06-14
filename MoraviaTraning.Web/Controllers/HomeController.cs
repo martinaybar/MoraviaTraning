@@ -26,5 +26,10 @@ namespace MoraviaTraning.Web.Controllers
 
             return View();
         }
+
+        public ActionResult FirstAngularPage()
+        {
+            return View();
+        }
     }
 }
