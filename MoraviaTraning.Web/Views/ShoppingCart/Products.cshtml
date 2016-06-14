@@ -1,0 +1,77 @@
+﻿
+@{
+    ViewBag.Title = "Products";
+}
+
+@section Scripts{
+
+    <script src="~/AngularControllers/ProductsController.js"></script>
+}
+
+
+
+
+<h2>Products</h2>
+
+
+    @*<div ng-app="ProductsApp" class="container">
+
+        
+        
+        
+        <div ng-controller="ProductsController">
+            
+            <table class="table">
+                <tr ng-repeat="p in products">
+                    <td>{{p.Name}}</td> 
+                </tr>
+            </table>
+
+        </div>
+    </div>*@
+
+
+<div ng-app="ProductsApp" class="row">
+
+    <div class="col-md-3">
+        <p class="lead">Categories</p>
+        <div class="list-group">
+            <a href="#" class="list-group-item">Category 1</a>
+            <a href="#" class="list-group-item">Category 2</a>
+            <a href="#" class="list-group-item">Category 3</a>
+        </div>
+    </div>
+    <div class="col-md-9">
+        <div ng-controller="ProductsController" class="row">
+
+
+            <div ng-repeat="p in products" class="col-xs-12 col-lg-4 col-md-6">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/320x150" alt="">
+                    <div class="caption">
+                        <h4 class="pull-right">{{p.Price}}</h4>
+                        <h4>
+                            <a href="#">{{p.Name}}</a>
+                        </h4>
+                        <p>See more snippets like this online store item at <a target="_blank" href="http://www.bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
+                    </div>
+                    <div class="ratings">
+                        <p class="pull-right">15 reviews</p>
+                        <p>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+         
+        </div>
+    </div>
+</div>
+
+

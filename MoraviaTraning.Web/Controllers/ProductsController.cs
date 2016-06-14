@@ -11,7 +11,7 @@ using MoraviaTraning.Web.Models;
 
 namespace MoraviaTraning.Web.Controllers
 {
-    [Authorize]
+    //[Authorize(Roles ="Client")]
     public class ProductsController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
@@ -117,6 +117,18 @@ namespace MoraviaTraning.Web.Controllers
             await db.SaveChangesAsync();
             return RedirectToAction("Index");
         }
+
+
+
+
+
+        public ActionResult ProductsList()
+        {
+           
+            return View();
+        }
+
+
 
         protected override void Dispose(bool disposing)
         {
