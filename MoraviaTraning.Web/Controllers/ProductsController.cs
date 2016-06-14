@@ -118,6 +118,19 @@ namespace MoraviaTraning.Web.Controllers
             return RedirectToAction("Index");
         }
 
+
+
+
+
+        public async Task<ActionResult> ProductsList()
+        {
+           
+            return View();
+        }
+
+
+
+
         protected override void Dispose(bool disposing)
         {
             if (disposing)
