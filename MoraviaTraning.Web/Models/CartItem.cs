@@ -10,7 +10,7 @@ namespace MoraviaTraning.Web.Models
     {
         [Key]
         public string Id { get; set; }
-        public int Qty { get; set; }
+        public int Qty { get; set; } = 0;
 
         public virtual Product Product { get; set; }
         public virtual Cart Cart { get; set; }

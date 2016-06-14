@@ -20,6 +20,7 @@ namespace MoraviaTraning.Web.Models
         public float Total { get; set; }
         public float Discount { get; set; }
         public DateTime CreationDate { get; set; }
+        public string Address { get; set; }
 
         public virtual User User { get; set; }
         public virtual ICollection<CartItem> Items { get; set; }

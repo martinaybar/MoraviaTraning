@@ -196,6 +196,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CartsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
@@ -206,10 +207,20 @@
     <Compile Include="Migrations\201605302216528_first.Designer.cs">
       <DependentUpon>201605302216528_first.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201606041244446_Modify User.cs" />
+    <Compile Include="Migrations\201606041244446_Modify User.Designer.cs">
+      <DependentUpon>201606041244446_Modify User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201606041342029_tt.cs" />
+    <Compile Include="Migrations\201606041342029_tt.Designer.cs">
+      <DependentUpon>201606041342029_tt.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Cart.cs" />
     <Compile Include="Models\CartItem.cs" />
+    <Compile Include="Models\Catalogs\CartMannager.cs" />
+    <Compile Include="Models\GeneralData.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Product.cs" />
@@ -279,9 +290,17 @@
     <Content Include="Views\Products\Details.cshtml" />
     <Content Include="Views\Products\Edit.cshtml" />
     <Content Include="Views\Products\Index.cshtml" />
+    <Content Include="Views\Carts\Create.cshtml" />
+    <Content Include="Views\Carts\Delete.cshtml" />
+    <Content Include="Views\Carts\Details.cshtml" />
+    <Content Include="Views\Carts\Edit.cshtml" />
+    <Content Include="Views\Carts\Index.cshtml" />
+    <Content Include="Views\Carts\SelectProducts.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Models\Data\" />
+    <Folder Include="Models\ViewModels\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -294,6 +313,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201605302216528_first.resx">
       <DependentUpon>201605302216528_first.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201606041244446_Modify User.resx">
+      <DependentUpon>201606041244446_Modify User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201606041342029_tt.resx">
+      <DependentUpon>201606041342029_tt.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

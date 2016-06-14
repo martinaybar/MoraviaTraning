@@ -16,6 +16,7 @@ namespace MoraviaTraning.Web.Models
 
         public string FirstName { get; set; }
         public string LastName { get; set; }
+        public virtual ICollection<Cart> Carts { get; set; }
     }
 
     public enum RolesEnum

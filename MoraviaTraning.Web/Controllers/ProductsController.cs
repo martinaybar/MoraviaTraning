@@ -11,7 +11,7 @@ using MoraviaTraning.Web.Models;
 
 namespace MoraviaTraning.Web.Controllers
 {
-    [Authorize(Roles ="Client")]
+    [Authorize]
     public class ProductsController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
