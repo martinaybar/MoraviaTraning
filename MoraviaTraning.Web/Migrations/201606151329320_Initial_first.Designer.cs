@@ -7,13 +7,13 @@ namespace MoraviaTraning.Web.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class ModifyUser : IMigrationMetadata
+    public sealed partial class Initial_first : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(ModifyUser));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(Initial_first));
         
         string IMigrationMetadata.Id
         {
-            get { return "201606041244446_Modify User"; }
+            get { return "201606151329320_Initial_first"; }
         }
         
         string IMigrationMetadata.Source

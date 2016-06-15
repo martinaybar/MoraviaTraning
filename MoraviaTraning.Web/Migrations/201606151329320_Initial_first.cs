@@ -3,7 +3,7 @@ namespace MoraviaTraning.Web.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class first : DbMigration
+    public partial class Initial_first : DbMigration
     {
         public override void Up()
         {
@@ -31,6 +31,7 @@ namespace MoraviaTraning.Web.Migrations
                         Total = c.Single(nullable: false),
                         Discount = c.Single(nullable: false),
                         CreationDate = c.DateTime(nullable: false),
+                        Address = c.String(),
                         User_Id = c.String(maxLength: 128),
                     })
                 .PrimaryKey(t => t.Id)
@@ -109,7 +110,7 @@ namespace MoraviaTraning.Web.Migrations
                         Name = c.String(nullable: false),
                         Details = c.String(),
                         Stock = c.Int(nullable: false),
-                        Price = c.Single(nullable: false),
+                        Price = c.Double(nullable: false),
                     })
                 .PrimaryKey(t => t.Id);
             

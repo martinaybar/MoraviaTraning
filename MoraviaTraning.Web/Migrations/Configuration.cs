@@ -32,7 +32,7 @@ namespace MoraviaTraning.Web.Migrations
 
             context.Roles.AddOrUpdate(
               p => p.Name,
-              new IdentityRole { Id ="1", Name = "Client" },
+              new IdentityRole { Id = "1", Name = "Client" },
               new IdentityRole { Id = "2", Name = "Admin" },
               new IdentityRole { Id = "3", Name = "WebAdmin" }
             );
@@ -40,25 +40,17 @@ namespace MoraviaTraning.Web.Migrations
 
             context.Products.AddOrUpdate(
               p => p.Name,
-              new Product { Id = Guid.NewGuid().ToString(), Name = "Galletita Trio XXX", Price = 56.67, Stock = 10  },
-              new Product { Id = Guid.NewGuid().ToString(), Name = "Caramelo Sugus", Price = 45.78, Stock = 10 },
-              new Product { Id = Guid.NewGuid().ToString(), Name = "Chicle XXX", Price = 25.45, Stock = 10 },
-              new Product { Id = Guid.NewGuid().ToString(), Name = "Chocolate Cofler", Price = 30, Stock = 10 }
+              new Product { Name = "Producto 1", Price = 56.67, Stock = 10, Details="asdf asdf asdf"},
+              new Product { Name = "Producto 2", Price = 45.78, Stock = 10, Details = "asdf asdf asdf" },
+              new Product { Name = "Producto 3", Price = 25.45, Stock = 10, Details = "asdf asdf asdf" },
+              new Product { Name = "Producto 4", Price = 30.89, Stock = 10, Details = "asdf asdf asdf" },
+              new Product { Name = "Producto 5", Price = 25, Stock = 5, Details = "asdf asdf asdf" },
+              new Product { Name = "Producto 6", Price = 30, Stock = 5, Details = "asdf asdf asdf" },
+              new Product { Name = "Producto 7", Price = 98, Stock = 5, Details = "asdf asdf asdf" },
+              new Product { Name = "Producto 8", Price = 87, Stock = 5, Details = "asdf asdf asdf" }
             );
             context.SaveChanges();
-
-
-
-            context.Products.AddOrUpdate(p => p.Name,
-                new Product { Name = "Producto 1", Price = 25, Stock = 5 },
-                new Product { Name = "Producto 2", Price = 30, Stock = 5 },
-                new Product { Name = "Producto 3", Price = 98, Stock = 5 },
-                new Product { Name = "Producto 4", Price = 87, Stock = 5 });
-
-
-            context.SaveChanges();
-
-
+           
         }
     }
 }
