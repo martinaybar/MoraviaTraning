@@ -47,15 +47,17 @@
 
             <div ng-repeat="p in products" class="col-xs-12 col-lg-4 col-md-6">
                 <div class="thumbnail">
-                    <img src="http://placehold.it/320x150" alt="">
+                    <img src="~/Images/ck_320_px_150px.jpg" alt="Product image"/>
+                    @*<img src="http://placehold.it/320x150" alt="">*@
                     <div class="caption">
                         <h4 class="pull-right">{{p.Price}}</h4>
                         <h4>
                             <a href="#">{{p.Name}}</a>
                         </h4>
-                        <p>See more snippets like this online store item at <a target="_blank" href="http://www.bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
+                        <p>{{p.Details}}</p>
+                        @*<p>See more snippets like this online store item at <a target="_blank" href="http://www.bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>*@
                     </div>
-                    <div class="ratings">
+                    @*<div class="ratings">
                         <p class="pull-right">15 reviews</p>
                         <p>
                             <span class="glyphicon glyphicon-star"></span>
@@ -64,7 +66,11 @@
                             <span class="glyphicon glyphicon-star"></span>
                             <span class="glyphicon glyphicon-star"></span>
                         </p>
+                    </div>*@
+                    <div style="text-align: right; margin:5px;">
+                        <a>Add to cart <span class="glyphicon glyphicon-plus"></span></a>
                     </div>
+
                 </div>
             </div>
 
