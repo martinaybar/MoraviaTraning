@@ -22,7 +22,7 @@ namespace MoraviaTraning.Web.Controllers
         // GET: ShoppingCart
         public ActionResult Products()
         {
-            return View();
+            return PartialView("_ProductList");
         }
 
 

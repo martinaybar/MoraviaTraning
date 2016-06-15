@@ -8,7 +8,7 @@
     @Scripts.Render("~/bundles/modernizr")
 
 </head>
-<body>
+<body ng-app="app">
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -25,6 +25,7 @@
             </div>
         </div>
     </div>
+    
     <div class="container body-content">
         @RenderBody()
         <hr />
@@ -36,6 +37,8 @@
     @Scripts.Render("~/bundles/jquery")
         @Scripts.Render("~/bundles/bootstrap")
         @Scripts.Render("~/bundles/angular")
+        @Scripts.Render("~/MainApp/app.js")
+       
     @RenderSection("scripts", required: false)
 </body>
 </html>
