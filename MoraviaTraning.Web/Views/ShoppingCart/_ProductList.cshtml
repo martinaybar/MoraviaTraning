@@ -1,6 +1,52 @@
-﻿<h3>This is product list </h3>
+﻿@*<h3>This is product list </h3>
 <div ng-controller="indexController">
     <div class="row" ng-repeat="product in products">
         {{product.Name}}
+    </div>
+</div>*@
+
+
+@*<h2>Products</h2>*@
+
+
+
+<div class="row">
+
+    <div class="col-md-3">
+        <p class="lead">Categories</p>
+        <div class="list-group">
+            <a href="#" class="list-group-item">Category 1</a>
+            <a href="#" class="list-group-item">Category 2</a>
+            <a href="#" class="list-group-item">Category 3</a>
+        </div>
+    </div>
+    <div class="col-md-9">
+        <div class="form-group">
+            <input class="form-control" type="text" id="" placeholder="Search" ng-model="searchProduct">
+        </div>
+
+        <div ng-controller="indexController" class="row">
+
+
+            <div ng-repeat="p in products | filter : searchProduct" class="col-xs-12 col-lg-4 col-md-6">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/320x150" alt="">
+                    <div class="caption">
+                        <h4 class="pull-right">{{p.Price}}</h4>
+                        <h4>
+                            <a href="#">{{p.Name}}</a>
+                        </h4>
+                        <p>{{p.Details}}</p>
+                    </div>
+                    <div style="text-align: right; margin:5px;">
+                        <a>Add to cart <span class="glyphicon glyphicon-plus"></span></a>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
     </div>
 </div>
