@@ -34,6 +34,28 @@ namespace MoraviaTraning.Web.Controllers
             return Json(products, JsonRequestBehavior.AllowGet);
         }
 
+        public ActionResult NewShoppingCart()
+        {
+            return View();
+        }
+
+        public ActionResult Product()
+        {
+            return PartialView("_Product");
+        }
+
+        public ActionResult ShoppingCart()
+        {
+            return PartialView("_ShoppingCart");
+        }
+
+        public ActionResult Store()
+        {
+            return PartialView("_Store");
+        }
+
+
+
         #endregion
 
 

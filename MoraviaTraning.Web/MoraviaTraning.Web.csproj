@@ -222,6 +222,42 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Angular\css\style.css" />
+    <Content Include="Angular\img\logo.png" />
+    <Content Include="Angular\img\products\APL.jpg" />
+    <Content Include="Angular\img\products\AVC.jpg" />
+    <Content Include="Angular\img\products\BAN.jpg" />
+    <Content Include="Angular\img\products\CTP.jpg" />
+    <Content Include="Angular\img\products\FIG.jpg" />
+    <Content Include="Angular\img\products\GRF.jpg" />
+    <Content Include="Angular\img\products\GRP.jpg" />
+    <Content Include="Angular\img\products\GUA.jpg" />
+    <Content Include="Angular\img\products\KIW.jpg" />
+    <Content Include="Angular\img\products\LYC.jpg" />
+    <Content Include="Angular\img\products\MAN.jpg" />
+    <Content Include="Angular\img\products\ORG.jpg" />
+    <Content Include="Angular\img\products\PAP.jpg" />
+    <Content Include="Angular\img\products\PCH.jpg" />
+    <Content Include="Angular\img\products\PER.jpg" />
+    <Content Include="Angular\img\products\PMG.jpg" />
+    <Content Include="Angular\img\products\PNP.jpg" />
+    <Content Include="Angular\img\products\PSM.jpg" />
+    <Content Include="Angular\img\products\STR.jpg" />
+    <Content Include="Angular\img\products\TNG.jpg" />
+    <Content Include="Angular\img\products\WML.jpg" />
+    <Content Include="Angular\img\r0.png" />
+    <Content Include="Angular\img\r1.png" />
+    <Content Include="Angular\img\r2.png" />
+    <Content Include="Angular\img\r3.png" />
+    <Content Include="Angular\img\r4.png" />
+    <Content Include="Angular\partials\product.htm" />
+    <Content Include="Angular\partials\shoppingCart.htm" />
+    <Content Include="Angular\partials\store.htm" />
+    <Content Include="Angular\js\store.js" />
+    <Content Include="Angular\js\shoppingCart.js" />
+    <Content Include="Angular\js\product.js" />
+    <Content Include="Angular\js\controller.js" />
+    <Content Include="Angular\js\app.js" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
@@ -303,6 +339,10 @@
     <Content Include="Views\Carts\Index.cshtml" />
     <Content Include="Views\Carts\SelectProducts.cshtml" />
     <Content Include="Views\ShoppingCart\_ProductList.cshtml" />
+    <Content Include="Views\ShoppingCart\NewShoppingCart.cshtml" />
+    <Content Include="Views\ShoppingCart\_Product.cshtml" />
+    <Content Include="Views\ShoppingCart\_ShoppingCart.cshtml" />
+    <Content Include="Views\ShoppingCart\_Store.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
